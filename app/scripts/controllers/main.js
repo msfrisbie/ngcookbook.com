@@ -4,17 +4,26 @@ angular.module('ngcookbookApp')
 .controller('MainCtrl', function ($scope) {
 
 var vis = d3.select("#leftLogo")
-         .attr("width", 1000)
-         .attr("height", 1000);
+         // .attr("width", "100%")
+         // .attr("height", "100%")
 
+// console.log($(window).height(), $(window).width())
+
+var windowHeight = $(document).height();
+var refDist = 500
+var xMinActual = 49
+var xMaxActual = refDist-xMinActual
 var scaleX = d3.scale.linear()
-        .domain([0,500])
-        .range([0,1000])
+        .domain([xMinActual,xMaxActual])
+        .range([0,windowHeight])
 
+var yMinActual = 40
+var yMaxActual = 500-39
 var scaleY = d3.scale.linear()
-        .domain([0,500])
-        .range([0,1000])
+        .domain([yMinActual,yMaxActual])
+        .range([0,windowHeight])
 
+console.log(xMaxActual, yMaxActual)
 // poly = [{"x":0.0, "y":25.0},
 //         {"x":8.5,"y":23.4},
 //         {"x":13.0,"y":21.0},
@@ -104,7 +113,7 @@ vis.selectAll("polygon")
   .append("polygon")
   .attr("points",function(d) { 
     return d.points.map(function(d) {
-      return [scaleX(d.x - 49),scaleY(d.y - 40)].join(",");
+      return [scaleX(d.x),scaleY(d.y)].join(",");
       // return [d.x, d.y].join(",");
     }).join(" ");
   })
