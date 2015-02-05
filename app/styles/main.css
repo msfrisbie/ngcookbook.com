@@ -7,7 +7,7 @@ body {
 #leftLogo {
   position: fixed;
   top: 0;
-  right: 50%;
+  /*right: 50%;*/
   /*height: 100%;*/
   /*width: 50%;*/
 }
@@ -15,7 +15,15 @@ body {
 #rightLogo {
   position: fixed;
   top: 0;
-  left: 50%;
+  /*left: 50%;*/
   /*height: 100%;*/
   /*width: 50%;  */
+}
+
+.inLeft {
+  right: 50%;
+}
+
+.inRight {
+  left: 50%;
 }
