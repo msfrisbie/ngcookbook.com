@@ -13,19 +13,10 @@ angular.module('ngcookbookApp')
                .attr("width", maxPolygonWidth)
                .attr("height", windowHeight)
       
-
       var rightSVG = d3.select("#rightLogo")
                .attr("width", maxPolygonWidth)
                .attr("height", windowHeight)
       
-
-      // scope.slideLogo = function() {
-      //   $rootScope.logo.visible = !$rootScope.logo.visible;
-      //   $timeout(function() {
-      //     $rootScope.logo.visible = !$rootScope.logo.visible
-      //   }, 800);
-      // } 
-
       var leftPolygons = [
         {
           "points":[
@@ -136,4 +127,4 @@ angular.module('ngcookbookApp')
     },
     templateUrl: 'views/templates/logo.html'
   }
-})
+});

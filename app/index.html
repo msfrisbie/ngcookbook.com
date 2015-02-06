@@ -15,24 +15,24 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
-  <body ng-app="ngcookbookApp">
+  <body ng-cloak ng-app="ngcookbookApp">
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
 
-
     <!-- Add your site or application content here -->
+    <div class="border-strip"></div>
     <div class="container">
-      <div class="cookbook-navbar">
-          <a href="#/">Where to buy</a>
-          <a href="#/about">About the Author</a>
-          <a href="#/jake">More by Matt Frisbie</a>
-      </div>
+      <navbar></navbar>
       <div ng-view=""></div>
     </div>
 
     <logo></logo>
+
+    <div class="cover"
+         ng-if="showPage">
+    </div>
 
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -73,6 +73,7 @@
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/about.js"></script>
         <script src="scripts/directives/logo.js"></script>
+        <script src="scripts/directives/navbar.js"></script>
         <!-- endbuild -->
 </body>
 </html>
