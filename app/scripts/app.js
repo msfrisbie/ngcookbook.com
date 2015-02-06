@@ -47,7 +47,7 @@ angular
         controller: 'MainCtrl',
         resolve: animationResolve
       })
-      .when('/about', {
+      .when('/author', {
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl',
         resolve: animationResolve
@@ -57,11 +57,11 @@ angular
         controller: 'AboutCtrl',
         resolve: animationResolve
       })
-      .when('/more', {
-        templateUrl: 'views/more.html',
-        controller: 'AboutCtrl',
-        resolve: animationResolve
-      })
+      // .when('/more', {
+      //   templateUrl: 'views/more.html',
+      //   controller: 'AboutCtrl',
+      //   resolve: animationResolve
+      // })
       .otherwise({
         redirectTo: '/'
       });

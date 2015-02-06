@@ -7,31 +7,49 @@ angular.module('ngcookbookApp')
       scope.selectedNav = undefined;
 
       scope.$on('$routeChangeSuccess', function() {
-        for (var i=0; i<scope.links.length-1; ++i) {
+        for (var i=0; i<scope.links.length; ++i) {
           if (('#' + $location.url()) === scope.links[i].url) {
             scope.selectedNav = i;
+            break;
           }
         }
       })
 
+      scope.swap = function(idx) {
+        var tmp = scope.links[idx].text;
+        scope.links[idx].text = scope.links[idx].altText;
+        scope.links[idx].altText = tmp;
+      }
+
       scope.links = [
         {
           url: '#/',
-          text: 'About the Book'
+          primaryIdx: 2,
+          words: [
+            'about',
+            'the',
+            'book'
+          ]
+
         },
         {
           url: '#/buy',
-          text: 'Where to Buy'
+          primaryIdx: 0,
+          words: [
+            'buy',
+            'the',
+            'book'
+          ]
         },
         {
-          url: '#/about',
-          text: 'About the Author'
-        },
-        {
-          url: '#/more',
-          text: 'More by Matt Frisbie'
-        },
-        null
+          url: '#/author',
+          primaryIdx: 2,
+          words: [
+            'about', 
+            'the', 
+            'author'
+          ]
+        }
       ]
     },
     templateUrl: 'views/templates/navbar.html'

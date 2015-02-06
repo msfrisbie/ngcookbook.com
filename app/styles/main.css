@@ -2,6 +2,7 @@ body {
   background-color: #222222;
   height: 100%;
   width: 100%;
+  font-family: raleway;
 }
 
 #leftLogo {
@@ -125,7 +126,8 @@ body {
 }
 
 .cookbook-navbar {
-  /*width: 100%;*/
+  width: 100%;
+  min-width: 500px;
   /*width: inherit;*/
   margin-top: 20px;
   height: 56px;
@@ -142,26 +144,112 @@ body {
   float: left;
   display: block;
   background-color: transparent;
+  width: 33%;
+  /*margin-right: -5px;*/
 }
 
 .cookbook-navbar > a:hover {
   /*background-color: white;*/
   /*color: #EEEEEE;*/
   /*border: 3px solid #EEEEEE;*/
-  color: #E52A3A;
+  /*color: #E52A3A;*/
 
 }
 
 div.navbutton-text {
-  background-color: #EEEEEE;
+  /*background-color: #EEEEEE;*/
+  /*border-left: 5px solid #444444;
+  border-right: 5px solid #444444;*/
+  /*min-width: 150px;*/
+  /*position: relative;*/
+  /*left: 0;*/
+  /*top: 0;*/
+  width: 200px;
+  margin: 0 auto;
+  text-align: center;
 }
+
+/*div.navbutton-text > span {
+  position: absolute;
+}
+
+.float-inner-left {
+  float:left;
+}
+
+.float-inner-right {
+  float:right;
+}
+*/
 
 div.navbutton-text.active {
-  background-color: #B72933;
-  color: white;
+  border-bottom: 1px solid #B72933;
 }
 
-div.angle-right.active {
+div.cookbook-navbar span {
+  opacity:0;
+}
+
+div.cookbook-navbar span.primary-cell {
+  opacity:1;
+  color: #999999;
+}
+
+div.cookbook-navbar a:hover div.navbutton-text span {
+  opacity:1;
+  color: #555555;
+}
+
+div.cookbook-navbar a:hover div.navbutton-text span.primary-cell {
+  color: #BBBBBB;
+}
+
+div.cookbook-navbar a:hover div.navbutton-text.active span {
+  opacity:1;
+  color: #EEEEEE;
+}
+
+div.cookbook-navbar a:hover div.navbutton-text.active span.primary-cell {
+  color: #EEEEEE;
+}
+
+div.navbutton-text.active span {
+  opacity:1;
+  color: #888888;
+}
+
+div.navbutton-text.active span.primary-cell {
+  color: #EEEEEE;
+}
+
+
+/*div.navbutton-text.active {
+  border-bottom: 1px solid #B72933;
+  color: #BBBBBB;
+}
+*/
+/*
+.monospace {
+  width: 0.5em;
+}*/
+
+
+.navbutton-text > span {
+  /*width: 33%;*/
+  padding: 0 5px;
+  /*float: left;*/
+  /*text-align: center;*/
+}
+/*
+.navbutton-text > span:first-child {
+  text-align: left;
+}
+
+.navbutton-text > span:last-child {
+  text-align: right;
+}*/
+
+/*div.angle-right.active {
   border-bottom: 50px solid #B72933;
   border-left: 20px solid transparent;
 }
@@ -169,7 +257,7 @@ div.angle-right.active {
 div.angle-left.active {
   border-bottom: 50px solid transparent;
   border-left: 20px solid #B72933;
-}
+}*/
 
 .cookbook-navbar > a:visited {
   /*text-decoration: none;*/
@@ -183,14 +271,14 @@ div.angle-left.active {
   padding-right: 10px;
   font-weight: bold;
 }
-
+/*
 .angle {
   width: 27px;
   height: 50px;
   background-color: #222222;
-}
+}*/
 
-.angle-right {
+/*.angle-right {
   float: right;
   height: 0px;
   width: 10px;
@@ -205,7 +293,7 @@ div.angle-left.active {
   width: 10px;
   border-bottom: 50px solid transparent;
   border-left: 20px solid #EEEEEE;
-}
+}*/
 
 .border-strip {
   position: fixed;
@@ -215,3 +303,13 @@ div.angle-left.active {
   height: 50px;
   margin-top: 20px;
 }
+
+.outer-border-strip {
+  position: fixed;
+  z-index: -1;
+  background-color: #444444;
+  width: 100%;
+  height: 60px;
+  margin-top: 15px;
+}
+

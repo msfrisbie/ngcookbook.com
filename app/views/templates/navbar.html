@@ -1,18 +1,12 @@
 <div class="cookbook-navbar">
   <a ng-repeat="link in links" 
      ng-href="{{link.url}}">
-    <div class="angle">
-      <div ng-class="{active: selectedNav === $index}" 
-           class="angle-right">
-      </div>
-      <div ng-class="{active: selectedNav === $index-1}" 
-           class="angle-left">
-      </div>
-    </div>
-    <div ng-if="link"
-         class="navbutton-text"
-         ng-class="{active: selectedNav === $index}"
-         ng-bind="link.text">
+    <div class="navbutton-text"
+         ng-class="{active: selectedNav === $index}">
+      <span ng-repeat="word in link.words"
+            ng-class="{'primary-cell': link.primaryIdx === $index}"
+            ng-bind="word">
+      </span>
     </div>
   </a>
 </div>
