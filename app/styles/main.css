@@ -5,25 +5,120 @@ body {
 }
 
 #leftLogo {
-  position: fixed;
-  top: 0;
-  /*right: 50%;*/
-  /*height: 100%;*/
-  /*width: 50%;*/
-}
-
-#rightLogo {
-  position: fixed;
-  top: 0;
-  /*left: 50%;*/
-  /*height: 100%;*/
-  /*width: 50%;  */
-}
-
-.inLeft {
   right: 50%;
 }
 
-.inRight {
+#rightLogo {
   left: 50%;
 }
+
+.logo-wrapper {
+  background-color: #EEEEEE;
+  /*background-color: #55FF55;*/
+}
+
+.logo-wrapper-left {
+  position: fixed;
+  width: 50%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+}
+
+.logo-wrapper-left > svg {
+  float:right;
+}
+
+.logo-wrapper-right {
+  position: fixed;
+  width: 50%;
+  height: 100%;
+  top: 0px;
+  right:0px;  
+}
+
+.logo-wrapper-right > svg {
+  float:left;
+}
+
+/*.angular-svg-logo {
+  position: fixed;
+  top: 0;
+}*/
+
+.logo-wrapper-left.ng-hide-add {
+  animation: .5s fade-out-left cubic-bezier(.7,.2,.8,.3);
+  /*animation: .5s fade-out-left linear;*/
+}
+
+.logo-wrapper-left.ng-hide-remove {
+  animation: .5s fade-in-left cubic-bezier(.2,.7,.3,.8);
+  /*animation: .5s fade-in-left linear;*/
+}
+
+.logo-wrapper-right.ng-hide-remove {
+  animation: .5s fade-out-right cubic-bezier(.2,.7,.3,.8);
+  /*animation: .5s fade-out-right linear;*/
+}
+
+.logo-wrapper-right.ng-hide-add {
+  animation: .5s fade-in-right cubic-bezier(.7,.2,.8,.3);
+  /*animation: .5s fade-in-right linear;*/
+}
+
+@keyframes fade-out-left {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes fade-in-left {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes fade-out-right {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes fade-in-right {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+
+/*.ng-hide-add-enter {
+  opacity: 0;
+}
+
+.ng-hide-leave {
+  -webkit-transition: all 1s linear;
+  opacity: 0;
+}
+
+.ng-hide-leave-enter {
+  opacity: 1;
+}*/
+
+/*
+.inLeft {
+}
+
+.inRight {
+}*/

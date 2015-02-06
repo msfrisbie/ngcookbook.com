@@ -1,9 +1,11 @@
 angular.module('ngcookbookApp')
-.directive('logo', function () {
+.directive('logo', function ($rootScope, $timeout) {
   return {
     restrict: 'E',
-    link: function() {
+    link: function(scope) {
+
       var windowHeight = $(document).height();
+      var windowWidth = $(document).width();
       // var maxPolygonWidth = windowHeight * ((xMaxActual - xMinActual) / (yMaxActual - yMinActual))
       var maxPolygonWidth = windowHeight * (201/421)
       
@@ -15,7 +17,14 @@ angular.module('ngcookbookApp')
       var rightSVG = d3.select("#rightLogo")
                .attr("width", maxPolygonWidth)
                .attr("height", windowHeight)
+      
 
+      // scope.slideLogo = function() {
+      //   $rootScope.logo.visible = !$rootScope.logo.visible;
+      //   $timeout(function() {
+      //     $rootScope.logo.visible = !$rootScope.logo.visible
+      //   }, 800);
+      // } 
 
       var leftPolygons = [
         {

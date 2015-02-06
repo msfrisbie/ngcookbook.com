@@ -1,2 +1,16 @@
-<svg id="leftLogo" ng-class="{inLeft: true}"></svg>
-<svg id="rightLogo" ng-class="{inRight: true}"></svg>
+<div class="logo-wrapper logo-wrapper-left" 
+     ng-show="logo.visible">
+  <svg id="leftLogo" 
+       class="left-logo angular-svg-logo">
+  </svg>
+</div>
+<div class="logo-wrapper logo-wrapper-right" 
+     ng-show="logo.visible">
+  <svg id="rightLogo" 
+       class="right-logo angular-svg-logo">
+  </svg>
+</div>
+<!-- <button style="position: fixed"
+        ng-click="slideLogo()">
+  Toggle logo {{ logoVisible }}
+</button> -->
