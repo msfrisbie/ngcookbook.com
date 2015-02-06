@@ -144,43 +144,20 @@ body {
   float: left;
   display: block;
   background-color: transparent;
-  width: 33%;
+  width: 33.33%;
   /*margin-right: -5px;*/
 }
 
 .cookbook-navbar > a:hover {
-  /*background-color: white;*/
-  /*color: #EEEEEE;*/
-  /*border: 3px solid #EEEEEE;*/
-  /*color: #E52A3A;*/
 
 }
 
 div.navbutton-text {
-  /*background-color: #EEEEEE;*/
-  /*border-left: 5px solid #444444;
-  border-right: 5px solid #444444;*/
-  /*min-width: 150px;*/
-  /*position: relative;*/
-  /*left: 0;*/
-  /*top: 0;*/
-  width: 200px;
-  margin: 0 auto;
+  width: 100%;
+  /*width: 200px;*/
+  /*margin: 0 auto;*/
   text-align: center;
 }
-
-/*div.navbutton-text > span {
-  position: absolute;
-}
-
-.float-inner-left {
-  float:left;
-}
-
-.float-inner-right {
-  float:right;
-}
-*/
 
 div.navbutton-text.active {
   border-bottom: 1px solid #B72933;
@@ -188,50 +165,121 @@ div.navbutton-text.active {
 
 div.cookbook-navbar span {
   opacity:0;
+  animation: .2s hover-out-dormant linear;
 }
 
 div.cookbook-navbar span.primary-cell {
   opacity:1;
   color: #999999;
+  animation: .2s hover-out-dormant-primary linear;
 }
 
 div.cookbook-navbar a:hover div.navbutton-text span {
   opacity:1;
   color: #555555;
+  animation: .2s hover-in-dormant linear;
 }
 
 div.cookbook-navbar a:hover div.navbutton-text span.primary-cell {
   color: #BBBBBB;
+  animation: .2s hover-in-dormant-primary linear;
 }
 
 div.cookbook-navbar a:hover div.navbutton-text.active span {
   opacity:1;
   color: #EEEEEE;
+  animation: .2s hover-out-active linear;
 }
 
 div.cookbook-navbar a:hover div.navbutton-text.active span.primary-cell {
   color: #EEEEEE;
+  animation: .2s hover-out-active-primary linear;
 }
 
 div.navbutton-text.active span {
   opacity:1;
-  color: #888888;
+  color: #999999;
+  animation: .2s hover-in-active linear;
 }
 
 div.navbutton-text.active span.primary-cell {
   color: #EEEEEE;
+  animation: .2s hover-out-active-primary linear;
+}
+
+@keyframes hover-in-active-primary {
+  from {
+    color: #EEEEEE;
+  }
+  to {
+    color: #EEEEEE;
+  }
+}
+
+@keyframes hover-out-active-primary {
+  from {
+    color: #EEEEEE;
+  }
+  to {
+    color: #EEEEEE;
+  }
+}
+
+@keyframes hover-in-dormant-primary {
+  from {
+    color: #999999;
+  }
+  to {
+    color: #BBBBBB;
+  }
+}
+
+@keyframes hover-out-dormant-primary {
+  from {
+    color: #BBBBBB;
+  }
+  to {
+    color: #999999;
+  }
+}
+
+@keyframes hover-in-active {
+  from {
+    color: #EEEEEE;
+  }
+  to {
+    color: #999999;
+  }
+}
+
+@keyframes hover-out-active {
+  from {
+    color: #999999;
+  }
+  to {
+    color: #EEEEEE;
+  }
+}
+
+@keyframes hover-in-dormant {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes hover-out-dormant {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
 
 
-/*div.navbutton-text.active {
-  border-bottom: 1px solid #B72933;
-  color: #BBBBBB;
-}
-*/
-/*
-.monospace {
-  width: 0.5em;
-}*/
 
 
 .navbutton-text > span {
@@ -240,24 +288,6 @@ div.navbutton-text.active span.primary-cell {
   /*float: left;*/
   /*text-align: center;*/
 }
-/*
-.navbutton-text > span:first-child {
-  text-align: left;
-}
-
-.navbutton-text > span:last-child {
-  text-align: right;
-}*/
-
-/*div.angle-right.active {
-  border-bottom: 50px solid #B72933;
-  border-left: 20px solid transparent;
-}
-
-div.angle-left.active {
-  border-bottom: 50px solid transparent;
-  border-left: 20px solid #B72933;
-}*/
 
 .cookbook-navbar > a:visited {
   /*text-decoration: none;*/
@@ -271,29 +301,6 @@ div.angle-left.active {
   padding-right: 10px;
   font-weight: bold;
 }
-/*
-.angle {
-  width: 27px;
-  height: 50px;
-  background-color: #222222;
-}*/
-
-/*.angle-right {
-  float: right;
-  height: 0px;
-  width: 10px;
-  border-bottom: 50px solid #EEEEEE;
-  border-left: 20px solid transparent;
-}
-
-.angle-left {
-  position: absolute;
-  float: left;
-  height: 0px;
-  width: 10px;
-  border-bottom: 50px solid transparent;
-  border-left: 20px solid #EEEEEE;
-}*/
 
 .border-strip {
   position: fixed;
