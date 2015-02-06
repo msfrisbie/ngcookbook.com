@@ -37,6 +37,11 @@ angular
     }
 
     $routeProvider
+      // .when('', {
+      //   templateUrl: 'views/main.html',
+      //   controller: 'MainCtrl',
+      //   resolve: animationResolve
+      // })
       .when('/', {
         templateUrl: 'views/main.html',
         controller: 'MainCtrl',
@@ -90,24 +95,25 @@ angular
       }
     }
 
-    $rootScope.$on('$routeChangeStart', function() {
-      // console.log('jake', $location.url())
-      if ($rootScope.firstTime) {
-        $rootScope.firstTime = false;
-        $timeout(function() {
-          $rootScope.showPage = false;
-
-          showLogo();
+    $rootScope.$on('$routeChangeStart', function(data, payload) {
+      // console.log('jake', $location.url(), data, payload)
+      if (!payload.redirectTo) {
+        if ($rootScope.firstTime) {
+          $rootScope.firstTime = false;
+          $timeout(function() {
+            $rootScope.showPage = false;
+            showLogo(); 
+          }, 500)
           
-        }, 500)
-        
-      } else {
-        showLogo();
+        } else {
+          showLogo();
+        }
       }
     })
 
-    $rootScope.$on('$routeChangeSuccess', function() {
-      // console.log('jake2')
-      hideLogo();
+    $rootScope.$on('$routeChangeSuccess', function(data, payload) {
+      if (!payload.redirectTo) {
+        hideLogo();
+      }
     })
   });
