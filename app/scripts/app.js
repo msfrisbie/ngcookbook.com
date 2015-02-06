@@ -49,19 +49,16 @@ angular
       })
       .when('/author', {
         templateUrl: 'views/about.html',
-        controller: 'AboutCtrl',
         resolve: animationResolve
       })
       .when('/buy', {
         templateUrl: 'views/buy.html',
-        controller: 'AboutCtrl',
         resolve: animationResolve
       })
-      // .when('/more', {
-      //   templateUrl: 'views/more.html',
-      //   controller: 'AboutCtrl',
-      //   resolve: animationResolve
-      // })
+      .when('/content', {
+        templateUrl: 'views/content.html',
+        resolve: animationResolve
+      })
       .otherwise({
         redirectTo: '/'
       });

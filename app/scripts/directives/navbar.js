@@ -33,6 +33,15 @@ angular.module('ngcookbookApp')
 
         },
         {
+          url: '#/content',
+          primaryIdx: 1,
+          words: [
+            'book',
+            'content'
+          ]
+
+        },
+        {
           url: '#/buy',
           primaryIdx: 2,
           words: [

@@ -1,0 +1,1556 @@
+<span class="pub-title">
+    <h1>AngularJS Web Application Development Cookbook</h1>
+    <hr />
+    <div class="emphasis">
+        <h2>Get the entire first chapter for <i>free</i> on <a href="https://www.packtpub.com/web-development/angularjs-web-application-development-cookbook">packtpub.com
+        </a></h2>
+    </div>
+</span>
+<div class="emphasis">
+    <img class="pub-cover" src="/images/front-cover.jpg" />
+    <img class="pub-cover" src="/images/back-cover.jpg" />
+</div>
+<hr style="clear:both" />
+<h1>Table of Contents</h1>
+<hr />
+<h2></h2>
+<div class="emphasis table-of-contents">
+  <ul>
+    <li> 
+<span>1. Maximizing AngularJS Directives</span>
+      <ul>
+        <li> <span>Introduction</span>
+        </li>
+        <li> 
+<span>Building a simple element directive</span>
+          <ul>
+            <li> <span>How to do it…</span>
+            </li>
+            <li> <span>How it works…</span>
+            </li>
+            <li> <span>There's more…</span>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>Working through the directive spectrum</span>
+          <ul>
+            <li> <span>How to do it…</span>
+              <ul>
+                <li> <span>The element directive</span>
+                </li>
+                <li> <span>The attribute directive</span>
+                </li>
+                <li> <span>The class directive</span>
+                </li>
+                <li> <span>The comment directive</span>
+                </li>
+              </ul>
+            </li>
+            <li> <span>How it works…</span>
+            </li>
+            <li> <span>There's more…</span>
+            </li>
+            <li> <span>See also</span>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>Manipulating the DOM</span>
+          <ul>
+            <li> <span>How to do it…</span>
+            </li>
+            <li> <span>How it works…</span>
+            </li>
+            <li> <span>There's more…</span>
+            </li>
+            <li> <span>See also</span>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>Linking directives</span>
+          <ul>
+            <li> <span>How to do it…</span>
+            </li>
+            <li> <span>How it works…</span>
+            </li>
+            <li> <span>There's more…</span>
+            </li>
+            <li> <span>See also</span>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>Interfacing with a directive using isolate scope</span>
+          <ul>
+            <li> <span>Getting ready</span>
+            </li>
+            <li> <span>How to do it…</span>
+            </li>
+            <li> <span>How it works…</span>
+            </li>
+            <li> <span>There's more…</span>
+            </li>
+            <li> <span>See also</span>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>Interaction between nested directives</span>
+          <ul>
+            <li> <span>Getting ready</span>
+            </li>
+            <li> <span>How to do it…</span>
+            </li>
+            <li> <span>How it works…</span>
+            </li>
+            <li> <span>See also</span>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>Optional nested directive controllers</span>
+          <ul>
+            <li> <span>Getting ready</span>
+            </li>
+            <li> <span>How to do it…</span>
+            </li>
+            <li> <span>How it works…</span>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>Directive scope inheritance</span>
+          <ul>
+            <li> <span>Getting ready</span>
+            </li>
+            <li> <span>How to do it…</span>
+            </li>
+            <li> <span>How it works…</span>
+            </li>
+            <li> <span>See also</span>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>Directive templating</span>
+          <ul>
+            <li> <span>Getting ready</span>
+            </li>
+            <li> <span>How to do it…</span>
+            </li>
+            <li> <span>How it works…</span>
+            </li>
+            <li> <span>See also</span>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>Isolate scope</span>
+          <ul>
+            <li> <span>Getting ready</span>
+            </li>
+            <li> <span>How to do it…</span>
+            </li>
+            <li> <span>How it works…</span>
+            </li>
+            <li> <span>See also</span>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>Directive transclusion</span>
+          <ul>
+            <li> <span>How to do it…</span>
+            </li>
+            <li> <span>How it works…</span>
+            </li>
+            <li> <span>See also</span>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>Recursive directives</span>
+          <ul>
+            <li> <span>Getting ready</span>
+            </li>
+            <li> <span>How to do it…</span>
+              <ul>
+                <li> <span>The $compile service</span>
+                </li>
+                <li> <span>The angular.element() method</span>
+                </li>
+                <li> <span>The $templateCache</span>
+                </li>
+              </ul>
+            </li>
+            <li> <span>How it works…</span>
+            </li>
+            <li> <span>There's more…</span>
+            </li>
+            <li> <span>See also</span>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li> 
+<span>2. Expanding Your Toolkit with Filters and Service Types</span>
+      <ul>
+        <li> <span>Introduction</span>
+        </li>
+        <li> 
+<span>Using the uppercase and lowercase filters</span>
+          <ul>
+            <li> <span>How to do it…</span>
+            </li>
+            <li> <span>How it works…</span>
+            </li>
+            <li> <span>There's more…</span>
+            </li>
+            <li> <span>See also</span>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>Using the number and currency filters</span>
+          <ul>
+            <li> <span>Getting ready…</span>
+            </li>
+            <li> <span>How to do it…</span>
+            </li>
+            <li> <span>How it works…</span>
+            </li>
+            <li> <span>There's more…</span>
+            </li>
+            <li> <span>See also…</span>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>Using the date filter</span>
+          <ul>
+            <li> <span>Getting ready…</span>
+            </li>
+            <li> <span>How to do it…</span>
+            </li>
+            <li> <span>How it works…</span>
+            </li>
+            <li> <span>There's more…</span>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>Debugging using the json filter</span>
+          <ul>
+            <li> <span>Getting ready…</span>
+            </li>
+            <li> <span>How to do it…</span>
+            </li>
+            <li> <span>How it works…</span>
+            </li>
+            <li> <span>There's more…</span>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>Using data filters outside the template</span>
+          <ul>
+            <li> <span>Getting ready</span>
+            </li>
+            <li> <span>How to do it…</span>
+            </li>
+            <li> <span>How it works…</span>
+            </li>
+            <li> <span>There's more…</span>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>Using built-in search filters</span>
+          <ul>
+            <li> <span>Getting ready</span>
+            </li>
+            <li> <span>How to do it…</span>
+            </li>
+            <li> <span>How it works…</span>
+            </li>
+            <li> <span>See also</span>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>Chaining filters</span>
+          <ul>
+            <li> <span>Getting ready</span>
+            </li>
+            <li> <span>How to do it…</span>
+            </li>
+            <li> <span>How it works…</span>
+            </li>
+            <li> <span>There's more…</span>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>Creating custom data filters</span>
+          <ul>
+            <li> <span>How to do it…</span>
+            </li>
+            <li> <span>How it works…</span>
+            </li>
+            <li> <span>There's more…</span>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>Creating custom search filters</span>
+          <ul>
+            <li> <span>Getting ready</span>
+            </li>
+            <li> <span>How to do it…</span>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>Filtering with custom comparators</span>
+          <ul>
+            <li> <span>Getting ready</span>
+            </li>
+            <li> <span>How to do it…</span>
+            </li>
+            <li> <span>How it works…</span>
+            </li>
+            <li> <span>See also</span>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>Building a search filter from scratch</span>
+          <ul>
+            <li> <span>Getting ready</span>
+            </li>
+            <li> <span>How to do it…</span>
+            </li>
+            <li> <span>How it works…</span>
+            </li>
+            <li> <span>There's more…</span>
+            </li>
+            <li> <span>See also</span>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>Building a custom search filter expression from scratch</span>
+          <ul>
+            <li> <span>How to do it…</span>
+            </li>
+            <li> <span>How it works…</span>
+            </li>
+            <li> <span>There's more…</span>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>Using service values and constants</span>
+          <ul>
+            <li> <span>How to do it…</span>
+              <ul>
+                <li> <span>Service value</span>
+                </li>
+                <li> <span>Service constant</span>
+                </li>
+              </ul>
+            </li>
+            <li> <span>How it works…</span>
+            </li>
+            <li> <span>See also</span>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>Using service factories</span>
+          <ul>
+            <li> <span>How to do it…</span>
+            </li>
+            <li> <span>How it works…</span>
+            </li>
+            <li> <span>See also</span>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>Using services</span>
+          <ul>
+            <li> <span>How to do it…</span>
+            </li>
+            <li> <span>How it works…</span>
+            </li>
+            <li> <span>See also</span>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>Using service providers</span>
+          <ul>
+            <li> <span>How to do it…</span>
+            </li>
+            <li> <span>How it works…</span>
+            </li>
+            <li> <span>There's more…</span>
+            </li>
+            <li> <span>See also</span>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>Using service decorators</span>
+          <ul>
+            <li> <span>How to do it…</span>
+            </li>
+            <li> <span>How it works…</span>
+            </li>
+            <li> <span>See also</span>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li> 
+<span>3. AngularJS Animations</span>
+      <ul>
+        <li> <span>Introduction</span>
+        </li>
+        <li> 
+<span>Creating a simple fade in/out animation</span>
+          <ul>
+            <li> <span>Getting ready</span>
+            </li>
+            <li> <span>How to do it…</span>
+            </li>
+            <li> <span>How it works…</span>
+            </li>
+            <li> <span>There's more…</span>
+              <ul>
+                <li> <span>Keeping things clean</span>
+                </li>
+                <li> <span>No more boilerplate animation styling</span>
+                </li>
+              </ul>
+            </li>
+            <li> <span>See also</span>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>Replicating jQuery's slideUp() and slideDown() methods</span>
+          <ul>
+            <li> <span>Getting ready</span>
+            </li>
+            <li> <span>How to do it…</span>
+            </li>
+            <li> <span>How it works…</span>
+            </li>
+            <li> <span>See also</span>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>Creating enter animations with ngIf</span>
+          <ul>
+            <li> <span>Getting ready</span>
+            </li>
+            <li> <span>How to do it…</span>
+              <ul>
+                <li> <span>CSS3 transition</span>
+                </li>
+                <li> <span>CSS3 animation</span>
+                </li>
+                <li> <span>JavaScript animation</span>
+                </li>
+              </ul>
+            </li>
+            <li> <span>How it works…</span>
+            </li>
+            <li> <span>There's more…</span>
+            </li>
+            <li> <span>See also</span>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>Creating leave and concurrent animations with ngView</span>
+          <ul>
+            <li> <span>Getting ready</span>
+            </li>
+            <li> <span>How to do it…</span>
+              <ul>
+                <li> <span>CSS3 transition</span>
+                </li>
+                <li> <span>CSS3 animation</span>
+                </li>
+                <li> <span>JavaScript animation</span>
+                </li>
+              </ul>
+            </li>
+            <li> <span>How it works…</span>
+            </li>
+            <li> <span>See also</span>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>Creating move animations with ngRepeat</span>
+          <ul>
+            <li> <span>Getting ready</span>
+            </li>
+            <li> <span>How to do it…</span>
+              <ul>
+                <li> <span>CSS3 transition</span>
+                </li>
+                <li> <span>CSS3 animation</span>
+                </li>
+                <li> <span>JavaScript animation</span>
+                </li>
+              </ul>
+            </li>
+            <li> <span>How it works…</span>
+            </li>
+            <li> <span>There's more…</span>
+            </li>
+            <li> <span>See also</span>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>Creating addClass animations with ngShow</span>
+          <ul>
+            <li> <span>Getting ready</span>
+            </li>
+            <li> <span>How to do it…</span>
+              <ul>
+                <li> <span>CSS transitions</span>
+                </li>
+                <li> <span>CSS animation</span>
+                </li>
+                <li> <span>JavaScript animation</span>
+                </li>
+              </ul>
+            </li>
+            <li> <span>How it works…</span>
+            </li>
+            <li> <span>See also</span>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>Creating removeClass animations with ngClass</span>
+          <ul>
+            <li> <span>Getting ready</span>
+            </li>
+            <li> <span>How to do it…</span>
+              <ul>
+                <li> <span>CSS transitions</span>
+                </li>
+                <li> <span>CSS animation</span>
+                </li>
+                <li> <span>JavaScript animation</span>
+                </li>
+              </ul>
+            </li>
+            <li> <span>How it works…</span>
+            </li>
+            <li> <span>See also</span>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>Staggering batched animations</span>
+          <ul>
+            <li> <span>Getting ready</span>
+            </li>
+            <li> <span>How to do it…</span>
+            </li>
+            <li> <span>How it works…</span>
+            </li>
+            <li> <span>There's more…</span>
+            </li>
+            <li> <span>See also</span>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li> 
+<span>4. Sculpting and Organizing your Application</span>
+      <ul>
+        <li> <span>Introduction</span>
+        </li>
+        <li> 
+<span>Manually bootstrapping an application</span>
+          <ul>
+            <li> <span>Getting ready</span>
+            </li>
+            <li> <span>How to do it…</span>
+            </li>
+            <li> <span>How it works…</span>
+            </li>
+            <li> <span>There's more…</span>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>Using safe $apply</span>
+          <ul>
+            <li> <span>Getting ready</span>
+            </li>
+            <li> <span>How to do it…</span>
+            </li>
+            <li> <span>How it works…</span>
+            </li>
+            <li> <span>There's more…</span>
+              <ul>
+                <li> <span>Anti-pattern awareness</span>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>Application file and module organization</span>
+          <ul>
+            <li> <span>Getting ready</span>
+            </li>
+            <li> <span>How to do it…</span>
+              <ul>
+                <li> <span>One module, one file, and one name</span>
+                </li>
+                <li> <span>Keep your related files close, keep your unit tests closer</span>
+                </li>
+                <li> <span>Group by feature, not by component type</span>
+                </li>
+                <li> <span>Don't fight reusability</span>
+                </li>
+                <li> <span>An example directory structure</span>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>Hiding AngularJS from the user</span>
+          <ul>
+            <li> <span>Getting ready</span>
+            </li>
+            <li> <span>How to do it…</span>
+            </li>
+            <li> <span>How it works…</span>
+            </li>
+            <li> <span>There's more…</span>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>Managing application templates</span>
+          <ul>
+            <li> <span>Getting ready</span>
+            </li>
+            <li> <span>How to do it…</span>
+              <ul>
+                <li> <span>The string template</span>
+                </li>
+                <li> <span>Remote server templates</span>
+                </li>
+                <li> <span>Inline templates using ng-template</span>
+                </li>
+                <li> <span>Pre-defined templates in the cache</span>
+                </li>
+              </ul>
+            </li>
+            <li> <span>How it works…</span>
+            </li>
+            <li> <span>There's more…</span>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>The "Controller as" syntax</span>
+          <ul>
+            <li> <span>Getting ready</span>
+            </li>
+            <li> <span>How to do it…</span>
+            </li>
+            <li> <span>How it works…</span>
+            </li>
+            <li> <span>There's more…</span>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li> 
+<span>5. Working with the Scope and Model</span>
+      <ul>
+        <li> <span>Introduction</span>
+        </li>
+        <li> 
+<span>Configuring and using AngularJS events</span>
+          <ul>
+            <li> <span>How to do it…</span>
+              <ul>
+                <li> <span>Broadcasting an event</span>
+                </li>
+                <li> <span>Emitting an event</span>
+                </li>
+                <li> <span>Deregistering an event listener</span>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>Managing $scope inheritance</span>
+          <ul>
+            <li> <span>Getting ready</span>
+            </li>
+            <li> <span>How to do it…</span>
+            </li>
+            <li> <span>How it works…</span>
+            </li>
+            <li> <span>There's more…</span>
+              <ul>
+                <li> <span>Troublemaker built-in directives</span>
+                  <ul>
+                    <li> <span>ngController</span>
+                    </li>
+                    <li> <span>ngInclude</span>
+                    </li>
+                    <li> <span>ngView</span>
+                    </li>
+                    <li> <span>ngRepeat</span>
+                    </li>
+                    <li> <span>ngIf</span>
+                    </li>
+                    <li> <span>ngSwitch</span>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>Working with AngularJS forms</span>
+          <ul>
+            <li> <span>How to do it…</span>
+              <ul>
+                <li> <span>What the form offers you</span>
+                </li>
+                <li> <span>Tracking the form state</span>
+                </li>
+                <li> <span>Validating the form</span>
+                </li>
+                <li> <span>Built-in and custom validators</span>
+                </li>
+              </ul>
+            </li>
+            <li> <span>How it works…</span>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>Working with &lt;select&gt; and ngOptions</span>
+          <ul>
+            <li> <span>Getting ready</span>
+            </li>
+            <li> <span>How to do it…</span>
+              <ul>
+                <li> <span>Populating with an array</span>
+                  <ul>
+                    <li> <span>Explicitly defining the option values</span>
+                    </li>
+                    <li> <span>Explicitly defining the option model assignment</span>
+                    </li>
+                    <li> <span>Implementing option groups</span>
+                    </li>
+                  </ul>
+                </li>
+                <li> <span>Null options</span>
+                </li>
+                <li> <span>Populating with an object</span>
+                  <ul>
+                    <li> <span>Explicitly defining option values</span>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li> <span>How it works…</span>
+            </li>
+            <li> <span>There's more…</span>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>Building an event bus</span>
+          <ul>
+            <li> <span>Getting ready</span>
+            </li>
+            <li> <span>How to do it…</span>
+              <ul>
+                <li> <span>Basic implementation</span>
+                </li>
+                <li> <span>Cleanup</span>
+                </li>
+                <li> <span>Event bus as a service</span>
+                </li>
+                <li> <span>Event bus as a decorator</span>
+                </li>
+              </ul>
+            </li>
+            <li> <span>How it works…</span>
+            </li>
+            <li> <span>There's more…</span>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li> 
+<span>6. Testing in AngularJS</span>
+      <ul>
+        <li> <span>Introduction</span>
+        </li>
+        <li> 
+<span>Configuring and running your test environment in Yeoman and Grunt</span>
+          <ul>
+            <li> <span>How to do it…</span>
+              <ul>
+                <li> <span>Using the right tools for the job</span>
+                </li>
+              </ul>
+            </li>
+            <li> <span>How it works…</span>
+            </li>
+            <li> <span>There's more…</span>
+            </li>
+            <li> <span>See also</span>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>Understanding Protractor</span>
+          <ul>
+            <li> <span>How it works…</span>
+            </li>
+            <li> <span>There's more…</span>
+            </li>
+            <li> <span>See also</span>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>Incorporating E2E tests and Protractor in Grunt</span>
+          <ul>
+            <li> <span>Getting ready</span>
+            </li>
+            <li> <span>How to do it…</span>
+              <ul>
+                <li> <span>Installation</span>
+                </li>
+                <li> <span>Selenium's WebDriver manager</span>
+                </li>
+                <li> <span>Modifying your Gruntfile</span>
+                </li>
+                <li> <span>Setting your Protractor configuration</span>
+                </li>
+                <li> <span>Running the test suite</span>
+                </li>
+              </ul>
+            </li>
+            <li> <span>How it works…</span>
+            </li>
+            <li> <span>See also</span>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>Writing basic unit tests</span>
+          <ul>
+            <li> <span>Getting ready</span>
+            </li>
+            <li> <span>How to do it…</span>
+              <ul>
+                <li> <span>Initializing the unit tests</span>
+                </li>
+                <li> <span>Creating the unit tests</span>
+                </li>
+              </ul>
+            </li>
+            <li> <span>How it works…</span>
+              <ul>
+                <li> <span>Initializing the controller</span>
+                </li>
+                <li> <span>Initializing the HTTP backend</span>
+                </li>
+                <li> <span>Formally running the unit tests</span>
+                </li>
+              </ul>
+            </li>
+            <li> <span>There's more…</span>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>Writing basic E2E tests</span>
+          <ul>
+            <li> <span>Getting ready</span>
+            </li>
+            <li> <span>How to do it…</span>
+            </li>
+            <li> <span>How it works…</span>
+            </li>
+            <li> <span>There's more…</span>
+            </li>
+            <li> <span>See also</span>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>Setting up a simple mock backend server</span>
+          <ul>
+            <li> <span>How to do it…</span>
+            </li>
+            <li> <span>How it works…</span>
+            </li>
+            <li> <span>There's more…</span>
+            </li>
+            <li> <span>See also</span>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>Writing DAMP tests</span>
+          <ul>
+            <li> <span>How to do it…</span>
+            </li>
+            <li> <span>There's more…</span>
+            </li>
+            <li> <span>See also</span>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>Using the Page Object test pattern</span>
+          <ul>
+            <li> <span>How to do it…</span>
+            </li>
+            <li> <span>How it works…</span>
+            </li>
+            <li> <span>There's more…</span>
+            </li>
+            <li> <span>See also</span>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li> 
+<span>7. Screaming Fast AngularJS</span>
+      <ul>
+        <li> <span>Introduction</span>
+        </li>
+        <li> 
+<span>Recognizing AngularJS landmines</span>
+          <ul>
+            <li> <span>How to do it…</span>
+              <ul>
+                <li> <span>Expensive filters in ng-repeat</span>
+                </li>
+                <li> <span>Deep watching a large object</span>
+                </li>
+                <li> <span>Using $watchCollection when the index of change is needed</span>
+                </li>
+                <li> <span>Keeping template watchers under control</span>
+                </li>
+              </ul>
+            </li>
+            <li> <span>There's more…</span>
+            </li>
+            <li> <span>See also</span>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>Creating a universal watch callback</span>
+          <ul>
+            <li> <span>How to do it…</span>
+            </li>
+            <li> <span>How it works…</span>
+            </li>
+            <li> <span>There's more…</span>
+            </li>
+            <li> <span>See also</span>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>Inspecting your application's watchers</span>
+          <ul>
+            <li> <span>How to do it…</span>
+            </li>
+            <li> <span>How it works…</span>
+            </li>
+            <li> <span>There's more…</span>
+            </li>
+            <li> <span>See also</span>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>Deploying and managing $watch types efficiently</span>
+          <ul>
+            <li> <span>How to do it…</span>
+              <ul>
+                <li> <span>Watch as little of the model as possible</span>
+                </li>
+                <li> <span>Keep watch expressions as lightweight as possible</span>
+                </li>
+                <li> <span>Use the fewest number of watchers possible</span>
+                </li>
+                <li> <span>Keep the watch callbacks small and light</span>
+                </li>
+                <li> <span>Create DRY watchers</span>
+                </li>
+              </ul>
+            </li>
+            <li> <span>See also</span>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>Optimizing the application using reference $watch</span>
+          <ul>
+            <li> <span>How to do it…</span>
+            </li>
+            <li> <span>How it works…</span>
+            </li>
+            <li> <span>There's more…</span>
+            </li>
+            <li> <span>See also</span>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>Optimizing the application using equality $watch</span>
+          <ul>
+            <li> <span>How to do it…</span>
+            </li>
+            <li> <span>How it works…</span>
+            </li>
+            <li> <span>There's more…</span>
+            </li>
+            <li> <span>See also</span>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>Optimizing the application using $watchCollection</span>
+          <ul>
+            <li> <span>How to do it…</span>
+            </li>
+            <li> <span>How it works…</span>
+            </li>
+            <li> <span>There's more…</span>
+            </li>
+            <li> <span>See also</span>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>Optimizing the application using $watch deregistration</span>
+          <ul>
+            <li> <span>How to do it…</span>
+            </li>
+            <li> <span>How it works…</span>
+            </li>
+            <li> <span>See also</span>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>Optimizing template-binding watch expressions</span>
+          <ul>
+            <li> <span>How to do it…</span>
+            </li>
+            <li> <span>How it works…</span>
+            </li>
+            <li> <span>There's more…</span>
+            </li>
+            <li> <span>See also</span>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>Optimizing the application with the compile phase in ng-repeat</span>
+          <ul>
+            <li> <span>Getting ready</span>
+            </li>
+            <li> <span>How to do it…</span>
+            </li>
+            <li> <span>How it works…</span>
+            </li>
+            <li> <span>There's more…</span>
+            </li>
+            <li> <span>See also</span>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>Optimizing the application using track by in ng-repeat</span>
+          <ul>
+            <li> <span>How to do it…</span>
+            </li>
+            <li> <span>How it works…</span>
+            </li>
+            <li> <span>See also</span>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>Trimming down watched models</span>
+          <ul>
+            <li> <span>How to do it…</span>
+            </li>
+            <li> <span>How it works…</span>
+            </li>
+            <li> <span>There's more…</span>
+            </li>
+            <li> <span>See also</span>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li> 
+<span>8. Promises</span>
+      <ul>
+        <li> <span>Introduction</span>
+        </li>
+        <li> 
+<span>Understanding and implementing a basic promise</span>
+          <ul>
+            <li> <span>How to do it…</span>
+            </li>
+            <li> <span>How it works…</span>
+              <ul>
+                <li> <span>Basic components and behavior of a promise</span>
+                  <ul>
+                    <li> <span>Deferreds</span>
+                    </li>
+                    <li> <span>Promises</span>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li> <span>See also</span>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>Chaining promises and promise handlers</span>
+          <ul>
+            <li> <span>Getting ready</span>
+            </li>
+            <li> <span>How to do it…</span>
+              <ul>
+                <li> <span>Data handoff for chained handlers</span>
+                </li>
+                <li> <span>Rejecting a chained handler</span>
+                </li>
+              </ul>
+            </li>
+            <li> <span>How it works…</span>
+            </li>
+            <li> <span>There's more…</span>
+              <ul>
+                <li> <span>Promise handler trees</span>
+                </li>
+                <li> <span>The catch() method</span>
+                </li>
+                <li> <span>The finally() method</span>
+                </li>
+              </ul>
+            </li>
+            <li> <span>See also</span>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>Implementing promise notifications</span>
+          <ul>
+            <li> <span>How to do it…</span>
+            </li>
+            <li> <span>How it works…</span>
+            </li>
+            <li> <span>There's more…</span>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>Implementing promise barriers with $q.all()</span>
+          <ul>
+            <li> <span>How to do it…</span>
+            </li>
+            <li> <span>How it works…</span>
+            </li>
+            <li> <span>There's more…</span>
+            </li>
+            <li> <span>See also</span>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>Creating promise wrappers with $q.when()</span>
+          <ul>
+            <li> <span>How to do it…</span>
+            </li>
+            <li> <span>How it works…</span>
+            </li>
+            <li> <span>There's more…</span>
+            </li>
+            <li> <span>See also</span>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>Using promises with $http</span>
+          <ul>
+            <li> <span>How to do it…</span>
+            </li>
+            <li> <span>How it works…</span>
+            </li>
+            <li> <span>See also</span>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>Using promises with $resource</span>
+          <ul>
+            <li> <span>How to do it…</span>
+            </li>
+            <li> <span>How it works…</span>
+            </li>
+            <li> <span>See also</span>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>Using promises with Restangular</span>
+          <ul>
+            <li> <span>How to do it…</span>
+            </li>
+            <li> <span>How it works…</span>
+            </li>
+            <li> <span>See also</span>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>Incorporating promises into native route resolves</span>
+          <ul>
+            <li> <span>How to do it…</span>
+            </li>
+            <li> <span>How it works…</span>
+            </li>
+            <li> <span>There's more…</span>
+            </li>
+            <li> <span>See also</span>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>Implementing nested ui-router resolves</span>
+          <ul>
+            <li> <span>How to do it…</span>
+              <ul>
+                <li> <span>State promise inheritance</span>
+                </li>
+                <li> <span>Single-state promise dependencies</span>
+                </li>
+              </ul>
+            </li>
+            <li> <span>How it works…</span>
+            </li>
+            <li> <span>See also</span>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li> 
+<span>9. What's New in AngularJS 1.3</span>
+      <ul>
+        <li> <span>Introduction</span>
+        </li>
+        <li> 
+<span>Using HTML5 datetime input types</span>
+          <ul>
+            <li> <span>How to do it…</span>
+              <ul>
+                <li> <span>The &lt;input type="date"&gt; type</span>
+                </li>
+                <li> <span>The &lt;input type="datetime-local"&gt; type</span>
+                </li>
+                <li> <span>The &lt;input type="time"&gt; type</span>
+                </li>
+                <li> <span>The &lt;input type="week"&gt; type</span>
+                </li>
+                <li> <span>The &lt;input type="month"&gt; type</span>
+                </li>
+              </ul>
+            </li>
+            <li> <span>How it works…</span>
+            </li>
+            <li> <span>There's more…</span>
+            </li>
+            <li> <span>See also</span>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>Combining watchers with $watchGroup</span>
+          <ul>
+            <li> <span>How to do it…</span>
+            </li>
+            <li> <span>How it works…</span>
+            </li>
+            <li> <span>There's more…</span>
+            </li>
+            <li> <span>See also</span>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>Sanity checking with ng-strict-di</span>
+          <ul>
+            <li> <span>How to do it…</span>
+            </li>
+            <li> <span>There's more…</span>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>Controlling model input with ngModelOptions</span>
+          <ul>
+            <li> <span>Getting ready</span>
+            </li>
+            <li> <span>How to do it…</span>
+              <ul>
+                <li> <span>The updateOn option</span>
+                </li>
+                <li> <span>The debounce option</span>
+                </li>
+                <li> <span>The allowInvalid option</span>
+                </li>
+                <li> <span>The getterSetter option</span>
+                </li>
+                <li> <span>The timezone option</span>
+                </li>
+                <li> <span>The $rollbackViewValue option</span>
+                </li>
+              </ul>
+            </li>
+            <li> <span>How it works…</span>
+            </li>
+            <li> <span>See also</span>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>Incorporating $touched and $submitted states</span>
+          <ul>
+            <li> <span>How to do it…</span>
+              <ul>
+                <li> <span>The $touched state</span>
+                </li>
+                <li> <span>The $submitted state</span>
+                </li>
+              </ul>
+            </li>
+            <li> <span>See also</span>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>Cleaning up form errors with ngMessages</span>
+          <ul>
+            <li> <span>Getting ready</span>
+            </li>
+            <li> <span>How to do it…</span>
+            </li>
+            <li> <span>How it works…</span>
+            </li>
+            <li> <span>There's more…</span>
+            </li>
+            <li> <span>See also</span>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>Trimming your watch list with lazy binding</span>
+          <ul>
+            <li> <span>How to do it…</span>
+            </li>
+            <li> <span>How it works…</span>
+            </li>
+            <li> <span>There's more…</span>
+              <ul>
+                <li> <span>Bind once expression universality</span>
+                  <ul>
+                    <li> <span>The ng-repeat directive</span>
+                    </li>
+                    <li> <span>Isolate scope bindings</span>
+                    </li>
+                    <li> <span>Methods and expressions requiring execution</span>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li> <span>See also</span>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>Creating and integrating custom form validators</span>
+          <ul>
+            <li> <span>How to do it…</span>
+              <ul>
+                <li> <span>Synchronous validation</span>
+                </li>
+                <li> <span>Asynchronous validation</span>
+                </li>
+              </ul>
+            </li>
+            <li> <span>How it works…</span>
+            </li>
+            <li> <span>There's more…</span>
+            </li>
+            <li> <span>See also</span>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li> 
+<span>10. AngularJS Hacks</span>
+      <ul>
+        <li> <span>Introduction</span>
+        </li>
+        <li> 
+<span>Manipulating your application from the console</span>
+          <ul>
+            <li> <span>How to do it…</span>
+              <ul>
+                <li> <span>Scopes</span>
+                </li>
+                <li> <span>Services</span>
+                </li>
+              </ul>
+            </li>
+            <li> <span>There's more…</span>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>DRYing up your controllers</span>
+          <ul>
+            <li> <span>Getting ready</span>
+            </li>
+            <li> <span>How to do it…</span>
+            </li>
+            <li> <span>How it works…</span>
+            </li>
+            <li> <span>There's more…</span>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>Using ng-bind instead of ng-cloak</span>
+          <ul>
+            <li> <span>How to do it…</span>
+            </li>
+            <li> <span>How it works…</span>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>Commenting JSON files</span>
+          <ul>
+            <li> <span>How to do it…</span>
+              <ul>
+                <li> <span>Ignored properties</span>
+                </li>
+                <li> <span>Duplicate properties</span>
+                </li>
+                <li> <span>Don't run with scissors</span>
+                </li>
+              </ul>
+            </li>
+            <li> <span>How it works…</span>
+            </li>
+            <li> <span>There's more…</span>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>Creating custom AngularJS comments</span>
+          <ul>
+            <li> <span>How to do it…</span>
+            </li>
+            <li> <span>How it works…</span>
+            </li>
+            <li> <span>There's more…</span>
+              <ul>
+                <li> <span>Extensibility</span>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>Referencing deep properties safely using $parse</span>
+          <ul>
+            <li> <span>How to do it…</span>
+            </li>
+            <li> <span>How it works…</span>
+            </li>
+            <li> <span>There's more…</span>
+            </li>
+            <li> <span>See also</span>
+            </li>
+          </ul>
+        </li>
+        <li> 
+<span>Preventing redundant parsing</span>
+          <ul>
+            <li> <span>Getting ready</span>
+            </li>
+            <li> <span>How to do it…</span>
+            </li>
+            <li> <span>How it works…</span>
+            </li>
+            <li> <span>See also</span>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li> 
+<span>Index</span>
+    </li>
+  </ul>
+</div>

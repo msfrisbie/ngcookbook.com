@@ -134,11 +134,11 @@ body {
     text-align: center;
     color: #333333;
     line-height: 50px;
-    font-size: 24px;
+    font-size: 20px;
     float: left;
     display: block;
     background-color: transparent;
-    width: 33.33%;
+    width: 25%;
     /*margin-right: -5px;*/
   }
 
@@ -345,9 +345,12 @@ div.navbutton-text.active span.primary-cell {
 
 .pub-cover {
   /*display: block;*/
-  float: right;
-  width: 30%;
-  margin: 20px;
+  width: 48%;
+  margin: 0px 1% 50px 1%;
+  float: left;
+  /*width: 30%;*/
+  /*margin: 20px;*/
+
 }
 
 .headshot {
@@ -418,17 +421,61 @@ div.emphasis {
 }
 
 .friz-content li {
-  font-size: 1.8em;
+  font-size: 24px;
 }
 
 .friz-content ul {
-  margin-bottom: 50px;
+  /*margin-bottom: 50px;*/
 }
 
-.friz-content h2 strong {
+.friz-content div.emphasis h2 strong {
   color: #B72933;
 }
 
-.friz-content a, .friz-content a:hover, .friz-content a:visited {
+.friz-content div.emphasis a, 
+.friz-content div.emphasis a:hover, 
+.friz-content div.emphasis a:visited {
   color: #B72933;
+}
+
+.table-of-contents ul {
+  list-style-type: none;
+}
+
+.table-of-contents > ul > li > span {
+  color: #B72933;
+  font-size: 28px;
+}
+
+.table-of-contents ul li ul li ul li {
+  display: none;
+}
+/*
+h1.buybottons a {
+  color: #B72933;
+}*/
+
+h1.buybuttons div {
+  text-align: center;
+  /*line-height: 150px;*/
+  padding: 50px;
+  width: 100%;
+  min-height: 150px;
+  border: 3px solid #BBBBBB;
+  border-radius: 15px;
+  margin: 10px 0 10px 0;
+  text-decoration: none;
+}
+
+
+/*h1.buybuttons a:visited,*/
+h1.buybuttons a:hover {
+  text-decoration: none;
+}
+
+/*h1.buybuttons a:visited div,*/
+h1.buybuttons a:hover div {
+  color: white;
+  background-color: #E52A3A;
+  text-decoration: none;
 }
