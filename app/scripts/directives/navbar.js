@@ -34,11 +34,11 @@ angular.module('ngcookbookApp')
         },
         {
           url: '#/buy',
-          primaryIdx: 0,
+          primaryIdx: 2,
           words: [
-            'buy',
-            'the',
-            'book'
+            'where',
+            'to',
+            'buy'
           ]
         },
         {

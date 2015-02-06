@@ -3,6 +3,7 @@ body {
   height: 100%;
   width: 100%;
   font-family: raleway;
+  color: #DDDDDD;
 }
 
 #leftLogo {
@@ -125,28 +126,50 @@ body {
   }
 }
 
+@media (min-width: 600px) {
+
+  .cookbook-navbar > a {
+    text-decoration: none;
+    height: 56px;
+    text-align: center;
+    color: #333333;
+    line-height: 50px;
+    font-size: 24px;
+    float: left;
+    display: block;
+    background-color: transparent;
+    width: 33.33%;
+    /*margin-right: -5px;*/
+  }
+
+}
+
+@media (max-width: 600px) {
+  .cookbook-navbar > a {
+    text-decoration: none;
+    height: 56px;
+    text-align: center;
+    color: #333333;
+    line-height: 50px;
+    font-size: 24px;
+    float: left;
+    display: block;
+    background-color: transparent;
+    width: 100%;
+    /*margin-right: -5px;*/
+  }
+}
+
 .cookbook-navbar {
   width: 100%;
-  min-width: 500px;
+  /*min-width: 500px;*/
   /*width: inherit;*/
   margin-top: 20px;
   height: 56px;
   /*background-color: white;*/
 }
 
-.cookbook-navbar > a {
-  text-decoration: none;
-  height: 56px;
-  text-align: center;
-  color: #333333;
-  line-height: 50px;
-  font-size: 24px;
-  float: left;
-  display: block;
-  background-color: transparent;
-  width: 33.33%;
-  /*margin-right: -5px;*/
-}
+
 
 .cookbook-navbar > a:hover {
 
@@ -320,3 +343,92 @@ div.navbutton-text.active span.primary-cell {
   margin-top: 15px;
 }
 
+.pub-cover {
+  /*display: block;*/
+  float: right;
+  width: 30%;
+  margin: 20px;
+}
+
+.headshot {
+  float: right;
+  width: 40%;
+  margin: 0 20px 20px 20px;
+}
+
+.pub-desc {
+  float: left;
+}
+
+.pub-title {
+  text-align: center;
+  width: 100%;
+}
+
+
+.purchase-button-area {
+  /*top: 0px;*/
+  /*float: left;*/
+  width: 100%;
+}
+
+.purchase-button-area a {
+  margin: 10px;
+}
+
+.purchase-button-area a:hover {
+  text-decoration: none;
+}
+
+.purchase-button-area div {
+  border: 3px solid transparent;
+  background-color: #333333;
+  color: #E88746;
+  padding: 15px;
+  /*height: 60px;*/
+  font-size: 32px;
+  /*line-height: 60px;*/
+  border-radius: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.purchase-button-area div:hover {
+  border: 3px solid #E88746;
+}
+
+div.emphasis {
+  width: 100%;
+  padding: 0px 80px;
+}
+
+.friz-content h1 {
+  font-size: 3.5em;
+  margin-bottom: 10px;
+}
+
+.friz-content h2 {
+  font-size: 2.7em;
+  margin-bottom: 50px;
+}
+
+.friz-content p {
+  font-size: 1.8em;
+  margin-bottom: 50px;
+}
+
+.friz-content li {
+  font-size: 1.8em;
+}
+
+.friz-content ul {
+  margin-bottom: 50px;
+}
+
+.friz-content h2 strong {
+  color: #B72933;
+}
+
+.friz-content a, .friz-content a:hover, .friz-content a:visited {
+  color: #B72933;
+}
