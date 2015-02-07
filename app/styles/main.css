@@ -322,7 +322,7 @@ div.navbutton-text.active span.primary-cell {
 .cookbook-navbar > a > div.navbutton-text {
   padding-left: 10px;
   padding-right: 10px;
-  font-weight: bold;
+  /*font-weight: bold;*/
 }
 
 .border-strip {
