@@ -479,3 +479,29 @@ h1.buybuttons a:hover div {
   background-color: #E52A3A;
   text-decoration: none;
 }
+
+.bio h3 {
+  font-size: 32px;
+  margin-bottom: 50px;
+}
+
+.bio-headshot {
+  float: right;
+  width: 30%;
+  margin: 10px;
+}
+
+.bio-meetup {
+  float: left;
+  width: 40%;
+  margin: 10px;
+}
+
+.copyright {
+  bottom:0; 
+  width:100%; 
+  text-align: center;
+  font-size: 12px;
+  color: #888888;
+  margin-top: 100px;
+}
